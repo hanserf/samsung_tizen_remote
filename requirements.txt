@@ -1,0 +1,4 @@
+ # Ouch, such empty
+ #
+ # 2020 man, keep up!? rather look in setup.py
+ -e .

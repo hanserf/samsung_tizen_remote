@@ -1,0 +1,9 @@
+venv
+samsung-tv-api
+.vscode
+.idea/
+*__pycache__
+dist/
+.eggs/
+*.egg-info
+build/
