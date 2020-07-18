@@ -1,47 +1,230 @@
-"samsung_remote"{
-	"on_off":[74,77],
-	"source":[209,75],
-	"num_1":[71,132],
-	"num_2":[144,135],
-	"num_3":[210,137],
-	"num_4":[73,186],
-	"num_5":[140,186],
-	"num_6":[209,185],
-	"num_7":[69,235],
-	"um_8":[140,236],
-	"um_9":[210,238],
-	"num_0":[139,287],
-    "ttx_mix":[72,287],
-    "pre_ch":[210,289],
-	"vol_plus":[77,361],
-	"vol_minus":[74,431],
-	"mute":[137,358],
-	"next_ch":[205,363],
-	"prev_ch":[203,429],
-    "ch_list":[141,422],
-    "menu":[75,499],
-	"smart_hub":[138,492],
-	"guide":[205,497],
-    "tools":[68,553],
-    "info":[206,556],
-	"up":[137,564],
-	"down":[137,678],
-	"left":[76,619],
-    "right":[199,619],
-    "execute":[137,623],
-    "return":[69,683],
-	"exit":[205,681],
-	"A":[58,732],
-	"B":[111,735],
-	"C":[158,737],
-	"D":[214,734],
-	"rec":[57,776],
-	"e-manual":[111,779],
-	"ad-subt":[168,781],
-	"stop":[212,780],
-	"rewind":[57,820],
-	"play":[108,823],
-	"pause":[168,819],
-	"foreward":[211,819]
-
+{
+	"buttons_center": {
+		"on_off": [
+			74,
+			77,
+			"vpmch"
+		],
+		"source": [
+			209,
+			75,
+			"numpad"
+		],
+		"num_1": [
+			71,
+			132,
+			"numpad"
+		],
+		"num_2": [
+			144,
+			135,
+			"numpad"
+		],
+		"num_3": [
+			210,
+			137,
+			"numpad"
+		],
+		"num_4": [
+			73,
+			186,
+			"numpad"
+		],
+		"num_5": [
+			140,
+			186,
+			"numpad"
+		],
+		"num_6": [
+			209,
+			185,
+			"numpad"
+		],
+		"num_7": [
+			69,
+			235,
+			"numpad"
+		],
+		"num_8": [
+			140,
+			236,
+			"numpad"
+		],
+		"num_9": [
+			210,
+			238,
+			"numpad"
+		],
+		"num_0": [
+			139,
+			287,
+			"numpad"
+		],
+		"ttx_mix": [
+			72,
+			287,
+			"numpad"
+		],
+		"pre_ch": [
+			210,
+			289,
+			"numpad"
+		],
+		"vol_plus": [
+			77,
+			361,
+			"vpmch"
+		],
+		"vol_minus": [
+			74,
+			431,
+			"vpmch"
+		],
+		"mute": [
+			137,
+			358,
+			"numpad"
+		],
+		"ch_up": [
+			205,
+			363,
+			"vpmch"
+		],
+		"ch_down": [
+			203,
+			429,
+			"vpmch"
+		],
+		"ch_list": [
+			141,
+			422,
+			"numpad"
+		],
+		"menu": [
+			75,
+			499,
+			"numpad"
+		],
+		"smart_hub": [
+			138,
+			492,
+			"numpad"
+		],
+		"guide": [
+			205,
+			497,
+			"numpad"
+		],
+		"tools": [
+			68,
+			553,
+			"numpad"
+		],
+		"info": [
+			206,
+			556,
+			"numpad"
+		],
+		"up": [
+			137,
+			564,
+			"arrow"
+		],
+		"down": [
+			137,
+			678,
+			"arrow"
+		],
+		"left": [
+			76,
+			619,
+			"arrow"
+		],
+		"right": [
+			199,
+			619,
+			"arrow"
+		],
+		"execute": [
+			137,
+			623,
+			"numpad"
+		],
+		"return": [
+			69,
+			683,
+			"numpad"
+		],
+		"exit": [
+			205,
+			681,
+			"numpad"
+		],
+		"A": [
+			58,
+			732,
+			"color_ctrl"
+		],
+		"B": [
+			111,
+			735,
+			"color_ctrl"
+		],
+		"C": [
+			158,
+			737,
+			"color_ctrl"
+		],
+		"D": [
+			214,
+			734,
+			"color_ctrl"
+		],
+		"rec": [
+			57,
+			776,
+			"color_ctrl"
+		],
+		"e-manual": [
+			111,
+			779,
+			"color_ctrl"
+		],
+		"ad-subt": [
+			168,
+			781,
+			"color_ctrl"
+		],
+		"stop": [
+			212,
+			780,
+			"color_ctrl"
+		],
+		"rewind": [
+			57,
+			820,
+			"color_ctrl"
+		],
+		"play": [
+			108,
+			823,
+			"color_ctrl"
+		],
+		"pause": [
+			168,
+			819,
+			"color_ctrl"
+		],
+		"forward": [
+			211,
+			819,
+			"color_ctrl"
+		]
+	},
+	"button_dimensions": {
+		"numpad": [50,35],
+		"vpmch": [50,30],
+		"arrow": [30,35],
+		"color_ctrl": [35,25]
+	}
 }
