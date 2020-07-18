@@ -1,7 +1,7 @@
 from tkinter import *
 import argparse
 from src.gui import Window
-from src.remote_jsonparser import RemoteJsonParser,JSONParseError,myRemote
+from src.remote_jsonparser import RemoteJsonParser,JSONParseError,RemoteOverlay
 
 parser = argparse.ArgumentParser(description='TizenRemote')
 parser.add_argument('-ip','--ip_address', required=True, dest="ip", type=str, nargs=1, help="TV-IP address")
@@ -12,8 +12,8 @@ args = vars(parser.parse_args())
 if args['verbose']:
     dbg_print=True
 
-remote = RemoteJsonParser(args['input_file'],debug_print=dbg_print)
-keymap = myRemote(buttons=remote.myremote.buttons,rectangle=remote.myremote.rectangle)
+remote = RemoteJsonParser(args['input_file'])
+keymap = RemoteOverlay(buttons=remote.myremote.buttons,rectangle=remote.myremote.rectangle)
 
 def button_click(event):
     # The location of the click is stored in event sent by tkinter

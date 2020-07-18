@@ -1,7 +1,7 @@
 import json
 from collections import namedtuple
 
-myRemote = namedtuple("myRemote",["buttons","rectangle"])
+RemoteOverlay = namedtuple("RemoteOverlay",["buttons","rectangle"])
 
 class JSONParseError(Exception):
     """Raised when something goes bad in this module"""
@@ -28,9 +28,8 @@ class Rectangle:
 
 
 class RemoteJsonParser():
-    def __init__(self, path="static/keymap_samsung_tizen.json",debug_print=False):
+    def __init__(self, path="static/keymap_samsung_tizen.json"):
         self.myremote = None
-        self.dbg = debug_print
         try:
             with open(path, "r") as file:
                 as_dict = json.load(file)
@@ -53,6 +52,4 @@ class RemoteJsonParser():
                                width=btn_dims[0],
                                height=btn_dims[1])
             rectangles.append(a_rect)
-        self.myremote = myRemote(buttons=buttons,rectangle=rectangles)
-        if self.dbg:
-            print("{}".format(myRemote))
+        self.myremote = RemoteOverlay(buttons=buttons,rectangle=rectangles)
